@@ -33,16 +33,18 @@
 									{"compatibility": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 1.5,"text": "This resource pack only works on §aNVIDIA RTX §fcards."}},
 									{"warning": {"type": "label", "max_size": [ "100%" ], "text": "\nThis version of the pack is still in early developpement. You can deal with §cbugs §fwhile playing the game. "}},
 									{"QA": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 1.8,"text": "\n§6Questions and Anwsers :"}},
-									{"QA1": {"type": "label", "max_size": [ "100%" ], "text": "Q: From who are the normals map textures ?\nA: Most of the normal maps textures are \nfrom a Java Edition pack called 'Vanilla-Normals-Renewed-master' by Poudingue.\nPoudingue's GitHub: https://github.com/Poudingue/Vanilla-Norma\nls-Renewed-1.12"}},
-									{"QA2": {"type": "label", "max_size": [ "100%" ], "text": "\nQ: Will the texture pack be updated to newer version ?\nA: Of course i will, by the way, if you want to support me.\nDonate on Paypal: https://paypal.me/mazewave."}},
-									{"nothing": { "type": "label", "max_size": [ "100%" ], "font_scale_factor": 0, "text": "\n\n\n\n\n\n\nYou found me ?\nHehehehe you good\nBtw i don't really know what to write here, oh yeah json sucks to me, this file is litteraly copy/pasted from esbe shader (really cool shader without RTX btw)\nCool music : I kicked a cloud once - Aura / I kicked a cloud once - Saturn pt2 / Gambi - Popopop / Gambi - Macintosh\nAnime I watched : MHA, No game No life, HxH, Snk, Naruto, Naruto Shippuden, Pokemon, Radiant. So yeah im a newbie in this but i kinda like it ¯\\_(ツ)_/¯"}}
+									{"Q1": {"type": "label", "max_size": [ "100%" ], "text": "Q: From who are the normals map textures ?"}},
+									{"A1": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 0.9, "text": "§7A: Most of the normal maps textures are from a Java Edition pack called \"Vanilla-Normals-Renewed-1.12\" by Poudingue:\nhttps://short-d.com/r/3Mk0"}},
+									{"Q2": {"type": "label", "max_size": [ "100%" ], "text": "\nQ: Will the texture pack be updated to newer version ?"}},
+									{"A2": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 0.9, "text": "§7A: Of course i will, by the way, if you want to support me.\nDonate on Paypal: https://paypal.me/mazewave"}}
 								]
 							}
 						}
 					]
 				}
 			},
-			{"five": {"type": "label","font_scale_factor": 2,"text": "\n/§dMaze§5Wave"}}
+			{"mazewave": {"type": "label","font_scale_factor": 2,"text": "\n/§dMaze§5Wave"}},
+			{"nothing": { "type": "label", "max_size": [ "100%" ], "font_scale_factor": 0, "text": "\nYou found me ?\nHehehehe you good\nBtw i don't really know what to write here, oh yeah json sucks to me, this file is litteraly copy/pasted from esbe shader (really cool shader without RTX btw)\nCool music : I kicked a cloud once - Aura / I kicked a cloud once - Saturn pt2 / Gambi - Popopop / Gambi - Macintosh\nAnime I watched : MHA, No game No life, HxH, Snk, Naruto, Naruto Shippuden, Pokemon, Radiant. So yeah im a newbie in this but i kinda like it ¯\\_(ツ)_/¯"}}
 		]
 	},
 	"vanillaraytraced_scroll@common.scrolling_panel":{"$show_background": false,"$scrolling_content": "start.vanillaraytraced_panel"},
