@@ -20,8 +20,8 @@
 								"controls": [
 									{"icon": {"type": "image","texture": "pack_icon","size": [128,128]}},
 									{"gap": {"type": "panel", "size": [6,6]}},
-									{"introduction": {"type": "label", "max_size": [ "100% - 12px" ], "text": "Vanilla §aRaytraced §fadd PBR resources to Minecraft."}},
-									{"description": {"type": "label", "max_size": [ "100% - 12px" ], "text": "It provides §creflections, §broughness, §aemissive light §fto your world with the same originial look of Minecraft, but in better."}}
+									{"introduction": {"type": "label", "max_size": [ "100% - 12px" ], "text": "vanillaRaytraced.introduction"}},
+									{"description": {"type": "label", "max_size": [ "100% - 12px" ], "text": "vanillaRaytraced.description"}}
 								]
 							}
 						},
@@ -30,13 +30,16 @@
 								"type": "stack_panel",
 								"size": ["fill","100%c"],
 								"controls": [
-									{"compatibility": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 1.5,"text": "This resource pack only works on §aNVIDIA RTX §fcards."}},
-									{"warning": {"type": "label", "max_size": [ "100%" ], "text": "\nThis version of the pack is still in early developpement. You can deal with §cbugs §fwhile playing the game. "}},
-									{"QA": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 1.8,"text": "\n§6Questions and Anwsers :"}},
-									{"Q1": {"type": "label", "max_size": [ "100%" ], "text": "Q: From who are the normals map textures ?"}},
-									{"A1": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 0.9, "text": "§7A: Most of the normal maps textures are from a Java Edition pack called \"Vanilla-Normals-Renewed-1.12\" by Poudingue:\nhttps://short-d.com/r/3Mk0"}},
-									{"Q2": {"type": "label", "max_size": [ "100%" ], "text": "\nQ: Will the texture pack be updated to newer version ?"}},
-									{"A2": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 0.9, "text": "§7A: Of course i will, by the way, if you want to support me.\nDonate on Paypal: https://paypal.me/mazewave"}}
+									{"compatibility": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 1.5, "text": "vanillaRaytraced.compatibility"}},
+									{"gap_1": {"type": "label"}},
+									{"warning": {"type": "label", "max_size": [ "100%" ], "text": "vanillaRaytraced.warning"}},
+									{"gap_2": {"type": "label", "text":"\n\n"}},
+									{"QA": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 1.8, "color": "$6_color_format", "text": "vanillaRaytraced.QA"}},
+									{"Q1": {"type": "label", "max_size": [ "100%" ], "text": "vanillaRaytraced.Q1"}},
+									{"A1": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 0.9, "color": "$7_color_format", "text": "vanillaRaytraced.A1"}},
+									{"gap_3": {"type": "label"}},
+									{"Q2": {"type": "label", "max_size": [ "100%" ], "text": "vanillaRaytraced.Q2"}},
+									{"A2": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 0.9, "color": "$7_color_format", "text": "vanillaRaytraced.A2"}}
 								]
 							}
 						}
@@ -48,14 +51,22 @@
 		]
 	},
 	"vanillaraytraced_scroll@common.scrolling_panel":{"$show_background": false,"$scrolling_content": "start.vanillaraytraced_panel"},
-	"vanillaraytraced_main@common_dialogs.main_panel_no_buttons":{"size":["90%","90%"],"$text_name":"§0Vanilla §2Raytraced §0Info","$child_control":"start.vanillaraytraced_scroll"},
+	"vanillaraytraced_main@common_dialogs.main_panel_no_buttons":{"size":["90%","90%"], "$text_name":"vanillaRaytraced.name","$child_control":"start.vanillaraytraced_scroll"},
 
 	"vanillaraytraced_start": {
 		"type": "stack_panel",
 		"orientation": "horizontal",
 		"controls": [
-			{"ico": {"type": "image","texture": "pack_icon","size": [20,20]}},
-			{"ver": {"type": "label","text": " §8Vanilla \n Raytraced V0.3"}}
+			{ "ico": { "type": "image", "texture": "pack_icon", "size": [20,20] } },
+			{"gap": {"type": "label", "size": [ 5, "100%" ] }},
+			{
+				"ver": {
+					"type": "label",
+					"size": [ 75, "100%" ],
+					"text": "vanillaRaytraced.name", 
+					"color": "$8_color_format"
+				}
+			}
 		]
 	},
 	"copyright@common_buttons.light_content_button": {

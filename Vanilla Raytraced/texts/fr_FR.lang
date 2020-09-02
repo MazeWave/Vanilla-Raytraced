@@ -1,0 +1,10 @@
+vanillaRaytraced.name=Vanilla §2Raytraced
+vanillaRaytraced.introduction=Vanilla §aRaytraced§r ajoute des ressources PBR à Minecraft.
+vanillaRaytraced.description=Il fournit des §creflets§r, de la §brugosité§r, de la §alumière émissive§r à votre monde tout en conservant l'aspect originel de Minecraft.
+vanillaRaytraced.compatibility=Ce pack de ressources ne fonctionne que sur les cartes §aRTX d'NVIDIA§r.
+vanillaRaytraced.warning=Cette version du pack est encore en développement. Vous pouvez rencontrer des §cbugs§r lors de son utilisation.
+vanillaRaytraced.QA=Questions et réponses :
+vanillaRaytraced.Q1=Q: De qui sont les normales maps ?
+vanillaRaytraced.A1=R: La plupart des normales maps proviennent d'un pack Java Edition appelé "Vanilla-Normals-Renewed-1.12" de Poudingue: https://short-d.com/r/3Mk0
+vanillaRaytraced.Q2=Q: Le pack de textures sera-t-il mis à jour au fil des versions de Minecraft ?
+vanillaRaytraced.A2=R: Bien sûr, je le ferai. Au fait, si vous voulez me soutenir faites un don sur Paypal: https://paypal.me/mazewave
