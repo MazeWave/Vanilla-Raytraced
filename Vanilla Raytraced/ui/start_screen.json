@@ -3,44 +3,46 @@
 
 	"vanillaraytraced_panel": {
 		"type": "stack_panel",
-		"orientation": "horizontal",
-		"size": ["100%",256],
+		"orientation": "vertical",
+		"size": ["100%", "100%c + 8px"],
 		"offset": [4,4],
 		"controls": [
 			{
-				"imbadatjson":{
+				"panel":{
 					"type": "stack_panel",
-					"size": [132,"100%"],
+					"orientation": "horizontal",
+					"size": ["100% - 8px", "100%c"],
 					"controls": [
-						{"one": {"type": "image","texture": "pack_icon","size": [128,128]}},
-						{"two": {"type": "panel","size": [6,6]}},
-						{"three": {"type": "label","font_scale_factor": 1,"text": "Vanilla §aRaytraced §fadd \nPBR resources to \nMinecraft."}},
-						{"four": {"type": "label","font_scale_factor": 1,"text": "It provides §creflections,\n§broughness, §aemissive light \n§fto your world with the \nsame originial look of \nMinecraft, but in better."}},
-						{"five": {"type": "label","font_scale_factor": 2,"text": "\n/§dMaze§5Wave"}}
+						{
+							"imbadatjson":{
+								"type": "stack_panel",
+								"size": [132, "fill"],
+								"controls": [
+									{"icon": {"type": "image","texture": "pack_icon","size": [128,128]}},
+									{"gap": {"type": "panel", "size": [6,6]}},
+									{"introduction": {"type": "label", "max_size": [ "100% - 4px" ], "text": "Vanilla §aRaytraced §fadd PBR resources to Minecraft."}},
+									{"description": {"type": "label", "max_size": [ "100% - 4px" ], "text": "It provides §creflections, §broughness, §aemissive light §fto your world with the same originial look of Minecraft, but in better."}}
+								]
+							}
+						},
+						{
+							"dontblamemeplz":{
+								"type": "stack_panel",
+								"size": ["fill","100%c"],
+								"controls": [
+									{"compatibility": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 1.5,"text": "This resource pack only works on §aNVIDIA RTX §fcards."}},
+									{"warning": {"type": "label", "max_size": [ "100%" ], "text": "\nThis version of the pack is still in early developpement. You can deal with §cbugs §fwhile playing the game. "}},
+									{"QA": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 1.8,"text": "\n§6Questions and Anwsers :"}},
+									{"QA1": {"type": "label", "max_size": [ "100%" ], "text": "Q: From who are the normals map textures ?\nA: Most of the normal maps textures are \nfrom a Java Edition pack called 'Vanilla-Normals-Renewed-master' by Poudingue.\nPoudingue's GitHub: https://github.com/Poudingue/Vanilla-Norma\nls-Renewed-1.12"}},
+									{"QA2": {"type": "label", "max_size": [ "100%" ], "text": "\nQ: Will the texture pack be updated to newer version ?\nA: Of course i will, by the way, if you want to support me.\nDonate on Paypal: https://paypal.me/mazewave."}},
+									{"nothing": { "type": "label", "max_size": [ "100%" ], "font_scale_factor": 0, "text": "\n\n\n\n\n\n\nYou found me ?\nHehehehe you good\nBtw i don't really know what to write here, oh yeah json sucks to me, this file is litteraly copy/pasted from esbe shader (really cool shader without RTX btw)\nCool music : I kicked a cloud once - Aura / I kicked a cloud once - Saturn pt2 / Gambi - Popopop / Gambi - Macintosh\nAnime I watched : MHA, No game No life, HxH, Snk, Naruto, Naruto Shippuden, Pokemon, Radiant. So yeah im a newbie in this but i kinda like it ¯\\_(ツ)_/¯"}}
+								]
+							}
+						}
 					]
 				}
 			},
-			{
-				"dontblamemeplz":{
-					"type": "stack_panel",
-					"size": ["fill","100%"],
-					"controls": [
-						{"n": {"type": "label","font_scale_factor": 1.5,"text": "This resource pack only \nworks on §aNVIDIA RTX §fcards."}},
-						{"l": {"type": "label","text": "\nThis version of the pack is still in early \ndeveloppement. You can deal with §cbugs \n§fwhile playing the game. "}},
-						{"u": {"type": "label","font_scale_factor": 1.8,"text": "\n§6Questions and Anwsers :"}},
-						{"0": {"type": "label","text": "Q: From who are the normals map textures ?"}},
-						{"1": {"type": "label","text": "A: Most of the normal maps textures are \nfrom a Java Edition pack called \n'Vanilla-Normals-Renewed-master' \nby Poudingue. Poudingue's GitHub\n https://github.com/Poudingue/Vanilla-Norma\nls-Renewed-1.12"}},
-						{"2": {"type": "label","text": "Q: Will the texture pack be updated to newer \nversion ?"}},
-						{"3": {"type": "label","text": "A: Of course i will, by the way, if you want to \nsupport me. Donate on Paypal \nhttps://paypal.me/mazewave."}},
-						{"4": {"type": "label","text": "\n\n\n\n\n\n\n"}},
-						{"5": {"type": "label","text": "You found me ?"}},
-						{"6": {"type": "label","text": "Hehehehe you good"}},
-						{"7": {"type": "label","text": "Btw i don't really know what to write here, oh yeah json sucks to me, this file is litteraly copy/pasted from esbe shader (really cool shader without RTX btw)"}},
-						{"8": {"type": "label","text": "Cool music : I kicked a cloud once - Aura / I kicked a cloud once - Saturn pt2 / Gambi - Popopop / Gambi - Macintosh"}},
-						{"9": {"type": "label","text": "Anime I watched : MHA, No game No life, HxH, Snk, Naruto, Naruto Shippuden, Pokemon, Radiant. So yeah im a newbie in this but i kinda like it ¯\\_(ツ)_/¯"}}
-					]
-				}
-			}
+			{"five": {"type": "label","font_scale_factor": 2,"text": "\n/§dMaze§5Wave"}}
 		]
 	},
 	"vanillaraytraced_scroll@common.scrolling_panel":{"$show_background": false,"$scrolling_content": "start.vanillaraytraced_panel"},
