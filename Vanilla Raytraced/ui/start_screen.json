@@ -16,12 +16,12 @@
 						{
 							"imbadatjson":{
 								"type": "stack_panel",
-								"size": [132, "fill"],
+								"size": [140, "fill"],
 								"controls": [
 									{"icon": {"type": "image","texture": "pack_icon","size": [128,128]}},
 									{"gap": {"type": "panel", "size": [6,6]}},
-									{"introduction": {"type": "label", "max_size": [ "100% - 4px" ], "text": "Vanilla §aRaytraced §fadd PBR resources to Minecraft."}},
-									{"description": {"type": "label", "max_size": [ "100% - 4px" ], "text": "It provides §creflections, §broughness, §aemissive light §fto your world with the same originial look of Minecraft, but in better."}}
+									{"introduction": {"type": "label", "max_size": [ "100% - 12px" ], "text": "Vanilla §aRaytraced §fadd PBR resources to Minecraft."}},
+									{"description": {"type": "label", "max_size": [ "100% - 12px" ], "text": "It provides §creflections, §broughness, §aemissive light §fto your world with the same originial look of Minecraft, but in better."}}
 								]
 							}
 						},
@@ -48,7 +48,7 @@
 		]
 	},
 	"vanillaraytraced_scroll@common.scrolling_panel":{"$show_background": false,"$scrolling_content": "start.vanillaraytraced_panel"},
-	"vanillaraytraced_main@common_dialogs.main_panel_no_buttons":{"size":["80%","80%"],"$text_name":"§0Vanilla §2Raytraced §0Info","$child_control":"start.vanillaraytraced_scroll"},
+	"vanillaraytraced_main@common_dialogs.main_panel_no_buttons":{"size":["90%","90%"],"$text_name":"§0Vanilla §2Raytraced §0Info","$child_control":"start.vanillaraytraced_scroll"},
 
 	"vanillaraytraced_start": {
 		"type": "stack_panel",
@@ -62,7 +62,6 @@
 		"anchor_from": "bottom_left",
 		"anchor_to": "bottom_left",
 		"size": [106,26],
-		"$pressed_button_name": "button.menu_buy_game",
 		"$button_content": "start.vanillaraytraced_start",
 		"$default_button_alpha": 1,
 		"$default_hover_alpha": 1
