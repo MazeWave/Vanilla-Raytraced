@@ -1,6 +1,9 @@
 {
 	"namespace": "start",
 
+	// Menu
+	"vanillaraytraced_scroll@common.scrolling_panel":{"$show_background": false,"$scrolling_content": "start.vanillaraytraced_panel"},
+	"vanillaraytraced_main@common_dialogs.main_panel_no_buttons":{"size":["90%","90%"], "$text_name":"vanillaRaytraced.name","$child_control":"start.vanillaraytraced_scroll"},
 	"vanillaraytraced_panel": {
 		"type": "stack_panel",
 		"orientation": "vertical",
@@ -14,45 +17,49 @@
 					"size": ["100% - 8px", "100%c"],
 					"controls": [
 						{
-							"imbadatjson":{
+							"sidepanel":{
 								"type": "stack_panel",
-								"size": [140, "fill"],
+								"size": [128, "fill"],
 								"controls": [
 									{"icon": {"type": "image","texture": "pack_icon","size": [128,128]}},
 									{"gap": {"type": "panel", "size": [6,6]}},
-									{"introduction": {"type": "label", "max_size": [ "100% - 12px" ], "text": "vanillaRaytraced.introduction"}},
-									{"description": {"type": "label", "max_size": [ "100% - 12px" ], "text": "vanillaRaytraced.description"}}
+									{"introduction@menu_text": { "text": "vanillaRaytraced.introduction" }},
+									{"description@menu_text": { "text": "vanillaRaytraced.description" }}
 								]
 							}
 						},
+						{ "gap": {"type": "label", "size": [12, 12] }},
 						{
-							"dontblamemeplz":{
+							"content":{
 								"type": "stack_panel",
 								"size": ["fill","100%c"],
 								"controls": [
-									{"compatibility": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 1.5, "text": "vanillaRaytraced.compatibility"}},
+									{"compatibility@menu_text": { "font_scale_factor": 1.5, "text": "vanillaRaytraced.compatibility" }},
 									{"gap_1": {"type": "label"}},
-									{"warning": {"type": "label", "max_size": [ "100%" ], "text": "vanillaRaytraced.warning"}},
+									{"warning@menu_text": { "text": "vanillaRaytraced.warning"} },
 									{"gap_2": {"type": "label", "text":"\n\n"}},
-									{"QA": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 1.8, "color": "$6_color_format", "text": "vanillaRaytraced.QA"}},
-									{"Q1": {"type": "label", "max_size": [ "100%" ], "text": "vanillaRaytraced.Q1"}},
-									{"A1": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 0.9, "color": "$7_color_format", "text": "vanillaRaytraced.A1"}},
-									{"gap_3": {"type": "label"}},
-									{"Q2": {"type": "label", "max_size": [ "100%" ], "text": "vanillaRaytraced.Q2"}},
-									{"A2": {"type": "label", "max_size": [ "100%" ], "font_scale_factor": 0.9, "color": "$7_color_format", "text": "vanillaRaytraced.A2"}}
+									{"QA@menu_text": { "font_scale_factor": 1.8, "color": "$6_color_format", "text": "vanillaRaytraced.QA" }},
+									{"Q1@menu_text": { "text": "vanillaRaytraced.Q1" }},
+									{"A1@qa_answer": { "text": "vanillaRaytraced.A1" }},
+									{"gap_3": { "type": "label"} },
+									{"Q2@menu_text": { "type": "label", "max_size": [ "100%" ], "text": "vanillaRaytraced.Q2" }},
+									{"A2@qa_answer": { "text": "vanillaRaytraced.A2" }}
 								]
 							}
 						}
 					]
 				}
 			},
-			{"mazewave": {"type": "label","font_scale_factor": 2,"text": "\n/§dMaze§5Wave"}},
-			{"nothing": { "type": "label", "max_size": [ "100%" ], "font_scale_factor": 0, "text": "\nYou found me ?\nHehehehe you good\nBtw i don't really know what to write here, oh yeah json sucks to me, this file is litteraly copy/pasted from esbe shader (really cool shader without RTX btw)\nCool music : I kicked a cloud once - Aura / I kicked a cloud once - Saturn pt2 / Gambi - Popopop / Gambi - Macintosh\nAnime I watched : MHA, No game No life, HxH, Snk, Naruto, Naruto Shippuden, Pokemon, Radiant. So yeah im a newbie in this but i kinda like it ¯\\_(ツ)_/¯"}}
+			{"mazewave@menu_text": { "font_scale_factor": 2,"text": "\n/§dMaze§5Wave" }},
+			{"nothing@menu_text": { "font_scale_factor": 0, "text": "\nYou found me ?\nHehehehe you good\nBtw i don't really know what to write here, oh yeah json sucks to me, this file is litteraly copy/pasted from esbe shader (really cool shader without RTX btw)\nCool music : I kicked a cloud once - Aura / I kicked a cloud once - Saturn pt2 / Gambi - Popopop / Gambi - Macintosh\nAnime I watched : MHA, No game No life, HxH, Snk, Naruto, Naruto Shippuden, Pokemon, Radiant. So yeah im a newbie in this but i kinda like it ¯\\_(ツ)_/¯" }}
 		]
 	},
-	"vanillaraytraced_scroll@common.scrolling_panel":{"$show_background": false,"$scrolling_content": "start.vanillaraytraced_panel"},
-	"vanillaraytraced_main@common_dialogs.main_panel_no_buttons":{"size":["90%","90%"], "$text_name":"vanillaRaytraced.name","$child_control":"start.vanillaraytraced_scroll"},
 
+	// Presets
+	"menu_text":{ "type": "label", "max_size": [ "100%" ] },
+	"qa_answer@start.menu_text":{ "font_scale_factor": 0.9, "color": "$7_color_format" },
+
+	// Button
 	"vanillaraytraced_start": {
 		"type": "stack_panel",
 		"orientation": "horizontal",
@@ -70,8 +77,6 @@
 		]
 	},
 	"copyright@common_buttons.light_content_button": {
-		"anchor_from": "bottom_left",
-		"anchor_to": "bottom_left",
 		"size": [106,26],
 		"$button_content": "start.vanillaraytraced_start",
 		"$default_button_alpha": 1,
