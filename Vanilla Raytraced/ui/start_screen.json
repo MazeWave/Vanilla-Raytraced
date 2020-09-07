@@ -77,8 +77,10 @@
 		]
 	},
 	"copyright@common_buttons.light_content_button": {
+		"offset": [0, -25],
 		"size": [106,26],
 		"$button_content": "start.vanillaraytraced_start",
+		"$pressed_button_name": "button.menu_buy_game",
 		"$default_button_alpha": 1,
 		"$default_hover_alpha": 1
 	}
