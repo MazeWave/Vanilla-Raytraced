@@ -14,7 +14,11 @@ jobs:
         uses: jossef/action-latest-release-info@v1.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
+      - name: Fetch API Data 📦
+        uses: JamesIves/fetch-api-data-action@releases/v1
+        with:
+          ENDPOINT: https://api.github.com/repos/MazeWave/Vanilla-Raytraced/releases/${{ steps.latest_release_info.outputs.id }}
+              
       - name: Zip
         run: zip -r "Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.mcpack" "Vanilla Raytraced"
       
@@ -28,3 +32,14 @@ jobs:
           asset_path: Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.mcpack
           asset_name:  Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.mcpack
           asset_content_type: application/zip
+      - name: Upload to CurseForge
+        uses: itsmeow/curseforge-upload@master
+        with:
+          token: ${{ secrets.CF_API_TOKEN }}
+          project_id: 406651
+          game_endpoint: minecraft
+          file_path: Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.mcpack
+          changelog: ${{ steps.FETCH_API_DATA.outputs.body }}
+          display_name: Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}
+          game_versions: addons:1.16,addons:1.15
+          release_type: alpha
