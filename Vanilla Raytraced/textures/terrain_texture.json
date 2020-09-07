@@ -538,6 +538,9 @@
         "textures/blocks/flower_lily_of_the_valley"
       ]
     },
+    "wither_rose": {
+      "textures": "textures/blocks/flower_wither_rose"
+    },
     "double_plant_bottom": {
       "textures": [
         "textures/blocks/double_plant_sunflower_bottom",
@@ -784,9 +787,6 @@
     "redstone_ore": {
       "textures": "textures/blocks/redstone_ore"
     },
-    "redstone_ore_on": {
-      "textures": "textures/blocks/redstone_ore_on"
-    },
     "emerald_ore": {
       "textures": "textures/blocks/emerald_ore"
     },
@@ -833,7 +833,12 @@
         "textures/blocks/coral_plant_pink",
         "textures/blocks/coral_plant_purple",
         "textures/blocks/coral_plant_red",
-        "textures/blocks/coral_plant_yellow"
+        "textures/blocks/coral_plant_yellow",
+        "textures/blocks/coral_plant_blue_dead",
+        "textures/blocks/coral_plant_pink_dead",
+        "textures/blocks/coral_plant_purple_dead",
+        "textures/blocks/coral_plant_red_dead",
+        "textures/blocks/coral_plant_yellow_dead"
       ]
     },
     "coral_fan": {
@@ -1876,10 +1881,7 @@
     },
     "flowing_lava": {
       "quad": 1,
-      "textures": {
-        "path": "textures/blocks/lava_flow",
-        "pbr_emissive": 0.2
-      }
+      "textures": "textures/blocks/lava_flow"
     },
     "wool": {
       "textures": [
@@ -1925,16 +1927,10 @@
       ]
     },
     "fire_0": {
-      "textures": {
-        "path": "textures/blocks/fire_0",
-        "pbr_emissive": 0.2
-      }
+      "textures": "textures/blocks/fire_0"
     },
     "fire_1": {
-      "textures": {
-        "path": "textures/blocks/fire_1",
-        "pbr_emissive": 0.2
-      }
+      "textures": "textures/blocks/fire_1"
     },
     "still_water_grey": {
       "textures": "textures/blocks/water_still_grey"
@@ -1944,10 +1940,7 @@
       "textures": "textures/blocks/water_still"
     },
     "still_lava": {
-      "textures": {
-        "path": "textures/blocks/lava_still",
-        "pbr_emissive": 0.2
-      }
+      "textures": "textures/blocks/lava_still"
     },
     "cauldron_water": {
       "textures": "textures/blocks/cauldron_water"
@@ -2123,10 +2116,7 @@
       ]
     },
     "sea_lantern": {
-      "textures": {
-        "path": "textures/blocks/sea_lantern",
-        "pbr_emissive": 0.2
-      }
+      "textures": "textures/blocks/sea_lantern"
     },
     "sea_pickle": {
       "textures": "textures/blocks/sea_pickle"
@@ -2140,6 +2130,9 @@
         "textures/blocks/turtle_egg_slightly_cracked",
         "textures/blocks/turtle_egg_very_cracked"
       ]
+    },
+    "turtle_egg_carried": {
+      "textures": "textures/items/turtle_egg"
     },
     "beacon": {
       "textures": "textures/blocks/beacon"
@@ -2525,10 +2518,7 @@
       "textures": "textures/items/lantern"
     },
     "campfire_fire": {
-      "textures": {
-        "path": "textures/blocks/campfire",
-        "pbr_emissive": 0.2
-      }
+      "textures": "textures/blocks/campfire"
     },
     "campfire_log": {
       "textures": "textures/blocks/campfire_log"
@@ -2606,6 +2596,26 @@
     },
     "composter_bottom": {
       "textures": "textures/blocks/composter_bottom"
+    },
+    "light_block_carried": {
+      "textures": [
+        "textures/items/light_block_0",
+        "textures/items/light_block_1",
+        "textures/items/light_block_2",
+        "textures/items/light_block_3",
+        "textures/items/light_block_4",
+        "textures/items/light_block_5",
+        "textures/items/light_block_6",
+        "textures/items/light_block_7",
+        "textures/items/light_block_8",
+        "textures/items/light_block_9",
+        "textures/items/light_block_10",
+        "textures/items/light_block_11",
+        "textures/items/light_block_12",
+        "textures/items/light_block_13",
+        "textures/items/light_block_14",
+        "textures/items/light_block_15"
+      ]
     }
   }
 }
