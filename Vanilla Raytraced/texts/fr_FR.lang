@@ -8,3 +8,6 @@ vanillaRaytraced.Q1=Q: De qui sont les normales maps ?
 vanillaRaytraced.A1=R: La plupart des normales maps proviennent d'un pack Java Edition appelé "Vanilla-Normals-Renewed-1.12" de Poudingue: https://short-d.com/r/3Mk0
 vanillaRaytraced.Q2=Q: Le pack de textures sera-t-il mis à jour au fil des versions de Minecraft ?
 vanillaRaytraced.A2=R: Bien sûr, je le ferai. Au fait, si vous voulez me soutenir faites un don sur Paypal: https://paypal.me/mazewave
+vanillaRaytraced.credits = Crédits
+vanillaRaytraced.credits.pack = Pack de ressources
+vanillaRaytraced.credits.ui = Interface utilisateur

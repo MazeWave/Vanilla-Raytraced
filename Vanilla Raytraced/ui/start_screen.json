@@ -16,42 +16,119 @@
 					"orientation": "horizontal",
 					"size": ["100% - 8px", "100%c"],
 					"controls": [
-						{
-							"sidepanel":{
-								"type": "stack_panel",
-								"size": [128, "fill"],
-								"controls": [
-									{"icon": {"type": "image","texture": "pack_icon","size": [128,128]}},
-									{"gap": {"type": "panel", "size": [6,6]}},
-									{"introduction@menu_text": { "text": "vanillaRaytraced.introduction" }},
-									{"description@menu_text": { "text": "vanillaRaytraced.description" }}
-								]
-							}
-						},
-						{ "gap": {"type": "label", "size": [12, 12] }},
-						{
-							"content":{
-								"type": "stack_panel",
-								"size": ["fill","100%c"],
-								"controls": [
-									{"compatibility@menu_text": { "font_scale_factor": 1.5, "text": "vanillaRaytraced.compatibility" }},
-									{"gap_1": {"type": "label"}},
-									{"warning@menu_text": { "text": "vanillaRaytraced.warning"} },
-									{"gap_2": {"type": "label", "text":"\n\n"}},
-									{"QA@menu_text": { "font_scale_factor": 1.8, "color": "$6_color_format", "text": "vanillaRaytraced.QA" }},
-									{"Q1@menu_text": { "text": "vanillaRaytraced.Q1" }},
-									{"A1@qa_answer": { "text": "vanillaRaytraced.A1" }},
-									{"gap_3": { "type": "label"} },
-									{"Q2@menu_text": { "type": "label", "max_size": [ "100%" ], "text": "vanillaRaytraced.Q2" }},
-									{"A2@qa_answer": { "text": "vanillaRaytraced.A2" }}
-								]
-							}
-						}
+						{ "sidemenu@start.vrp_sidemenu": {} },
+						{ "gap": { "type": "label", "size": [12, 12] } },
+						{ "content@start.vrp_content":{} }
 					]
 				}
 			},
-			{"mazewave@menu_text": { "font_scale_factor": 2,"text": "\n/§dMaze§5Wave" }},
 			{"nothing@menu_text": { "font_scale_factor": 0, "text": "\nYou found me ?\nHehehehe you good\nBtw i don't really know what to write here, oh yeah json sucks to me, this file is litteraly copy/pasted from esbe shader (really cool shader without RTX btw)\nCool music : I kicked a cloud once - Aura / I kicked a cloud once - Saturn pt2 / Gambi - Popopop / Gambi - Macintosh\nAnime I watched : MHA, No game No life, HxH, Snk, Naruto, Naruto Shippuden, Pokemon, Radiant. So yeah im a newbie in this but i kinda like it ¯\\_(ツ)_/¯" }}
+		]
+	},
+
+	"vrp_sidemenu": {
+		"type": "stack_panel",
+		"size": [130, "fill"],
+		"orientation": "vertical",
+		"$default_selector_toggle_index": 0,
+		"controls": [
+			{ "label_1@settings_common.selector_group_label": { "text": "Général" } },
+			{
+				"general_button@settings_common.section_toggle_base": {
+					"$toggle_view_binding_name": "rp_toggle",
+					"$glyph_texture": "pack_icon",
+					"$glyph_color_texture": "pack_icon",
+					"$glyph_size": [ 19, 19 ],
+					"$button_text": "vanillaRaytraced.name",
+					"$toggle_group_forced_index": 0
+				}
+			},
+			{
+				"credits_button@settings_common.section_toggle_base": {
+					"$toggle_view_binding_name": "credits_toggle",
+					"$glyph_texture": "textures/ui/how_to_play_button_default_light",
+					"$glyph_color_texture": "textures/ui/how_to_play_button_default_light",
+					"$glyph_size": [ 19, 19 ],
+					"$button_text": "vanillaRaytraced.credits",
+					"$toggle_group_forced_index": 1
+				}
+			}
+		]
+	},
+	"vrp_content":{
+		"type": "stack_panel",
+		"size": ["fill","100%c"],
+		"controls": [
+			{
+				"theme":{
+					"type": "stack_panel",
+					"size": ["100%","100%c"],
+					"bindings": [
+						{
+							"binding_type": "view",
+							"source_control_name": "rp_toggle",
+							"source_property_name": "#toggle_state",
+							"target_property_name": "#visible"
+						}
+					],
+					"controls": [
+						{
+							"intro":{
+								"type": "stack_panel",
+								"orientation": "horizontal",
+								"size": ["100%", 90],
+								"controls": [
+									{"icon": {"type": "image","texture": "pack_icon","size": ["30%", "100%"]}},
+									{"gap": {"type": "panel", "size": [6,6]}},
+									{
+										"text":{
+											"type": "stack_panel",
+											"size": ["fill"],
+											"controls": [
+												{"introduction@menu_text": { "text": "vanillaRaytraced.introduction" }},
+												{"description@menu_text": { "text": "vanillaRaytraced.description" }}
+											]
+										}
+									}
+								]
+							}
+						},
+
+						{"gap": {"type": "panel", "size": [6,12]}},
+
+						{"compatibility@menu_text": { "font_scale_factor": 1.5, "text": "vanillaRaytraced.compatibility" }},
+						{"gap_1": {"type": "label"}},
+						{"warning@menu_text": { "text": "vanillaRaytraced.warning"} },
+						{"gap_2": {"type": "label", "text":"\n\n"}},
+						{"QA@menu_text": { "font_scale_factor": 1.8, "color": "$6_color_format", "text": "vanillaRaytraced.QA" }},
+						{"Q1@menu_text": { "text": "vanillaRaytraced.Q1" }},
+						{"A1@qa_answer": { "text": "vanillaRaytraced.A1" }},
+						{"gap_3": { "type": "label"} },
+						{"Q2@menu_text": { "type": "label", "max_size": [ "100%" ], "text": "vanillaRaytraced.Q2" }},
+						{"A2@qa_answer": { "text": "vanillaRaytraced.A2" }}
+					]
+				}
+			},
+			{
+				"credits":{
+					"type": "stack_panel",
+					"size": ["100%","100%c"],
+					"bindings": [
+						{
+							"binding_type": "view",
+							"source_control_name": "credits_toggle",
+							"source_property_name": "#toggle_state",
+							"target_property_name": "#visible"
+						}
+					],
+					"controls": [
+						{ "rp@menu_text": { "font_scale_factor": 1.2, "text": "vanillaRaytraced.credits.pack" } },
+						{ "rp_by@menu_text": { "text": "/§dMaze§5Wave\n\n" } },
+						{ "menu@menu_text": { "font_scale_factor": 1.2, "text": "vanillaRaytraced.credits.ui" } },
+						{"menu_by@menu_text": { "text": "/§9Evan§1G" } }
+					]
+				}
+			}
 		]
 	},
 
