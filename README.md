@@ -3,6 +3,7 @@
   <br>
   <a href="https://github.com/MazeWave/Vanilla-Raytraced/releases">
     <img src="https://img.shields.io/github/tag/MazeWave/Vanilla-Raytraced.svg?label=version&style=flat" alt="Version">
+  <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/MazeWave/Vanilla-Raytraced/total">
   </a>
 </p>
 
