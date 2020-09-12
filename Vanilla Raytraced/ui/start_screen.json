@@ -31,8 +31,9 @@
 		"size": [130, "fill"],
 		"orientation": "vertical",
 		"$default_selector_toggle_index": 0,
+		"$vrpAddon|default": false,
 		"controls": [
-			{ "label_1@settings_common.selector_group_label": { "text": "vanillaRaytraced.general" } },
+			{ "general@settings_common.selector_group_label": { "text": "vanillaRaytraced.general" } },
 			{
 				"pack_button@sidemenu_button": {
 					"$toggle_view_binding_name": "rp_toggle",
@@ -59,7 +60,9 @@
 					"$button_text": "vanillaRaytraced.licence",
 					"$toggle_group_forced_index": 2
 				}
-			}
+			},
+			{"gap@menu_text": {"size": [6, 6]}},
+			{ "addons@settings_common.selector_group_label": { "text": "vanillaRaytraced.addons",  "ignored": "(not $vrpAddon)" } }
 		]
 	},
 	"vrp_content":{

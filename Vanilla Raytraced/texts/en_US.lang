@@ -1,6 +1,6 @@
 vanillaRaytraced.name=Vanilla §2Raytraced
-
 vanillaRaytraced.general=General
+vanillaRaytraced.addons=Addons
 
 vanillaRaytraced.pack=Vanilla §2Raytraced
 vanillaRaytraced.pack.introduction=Vanilla §aRaytraced§r add PBR resources to Minecraft.
@@ -16,6 +16,6 @@ vanillaRaytraced.pack.A2=A: Of course i will, by the way, if you want to support
 vanillaRaytraced.credits=Credits
 vanillaRaytraced.credits.pack=Ressource pack
 vanillaRaytraced.credits.ui=User interface
-vanillaRaytraced.credits.normals=Normals map
+vanillaRaytraced.credits.normals=Normal maps
 
 vanillaRaytraced.licence=Licence
