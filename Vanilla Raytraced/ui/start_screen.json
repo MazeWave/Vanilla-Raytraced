@@ -37,8 +37,8 @@
 			{
 				"pack_button@sidemenu_button": {
 					"$toggle_view_binding_name": "rp_toggle",
-					"$glyph_texture": "pack_icon",
-					"$glyph_color_texture": "pack_icon",
+					"$glyph_texture": "textures/vrp/icon",
+					"$glyph_color_texture": "textures/vrp/icon",
 					"$button_text": "vanillaRaytraced.pack",
 					"$toggle_group_forced_index": 0
 				}
@@ -88,7 +88,7 @@
 								"orientation": "horizontal",
 								"size": ["100%", 90],
 								"controls": [
-									{"icon": {"type": "image","texture": "pack_icon","size": ["30%", "100%"]}},
+									{"icon": {"type": "image","texture": "textures/vrp/icon","size": ["30%", "100%"]}},
 									{"gap": {"type": "panel", "size": [6,6]}},
 									{
 										"text":{
