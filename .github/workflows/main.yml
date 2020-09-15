@@ -20,7 +20,9 @@ jobs:
           ENDPOINT: https://api.github.com/repos/MazeWave/Vanilla-Raytraced/releases/${{ steps.latest_release_info.outputs.id }}
               
       - name: Zip
-        run: zip -r "Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.mcpack" "Vanilla Raytraced"
+        run: |
+          zip -r "Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.mcpack" "Vanilla Raytraced"
+          zip "Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.zip" "Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.mcpack"
       
       - name: Upload to Github
         id: upload-release-asset 
@@ -38,7 +40,7 @@ jobs:
           token: ${{ secrets.CF_API_TOKEN }}
           project_id: 406651
           game_endpoint: minecraft
-          file_path: Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.mcpack
+          file_path: Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.zip
           changelog: ${{ steps.FETCH_API_DATA.outputs.body }}
           display_name: Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}
           game_versions: addons:1.16,addons:1.15
