@@ -13,6 +13,9 @@ It provides reflections, roughness, emissive light to your world with the same o
 This version of the pack is still in early developpement. You can deal with bugs while playing the game.
 
 ## Compatible addons
+
+**Modules must imperatively be placed on top of Vanilla Raytraced**
+
 |                                                                                    Icon                                                                            |                                                 Addon                                                  |          Author          |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------:|:------------------------:|
 | <img src="https://raw.githubusercontent.com/MazeWave/Vanilla-Raytraced-Addons-Mirror/master/Vanilla%20Raytraced%20Mirror%20Addons/pack_icon.png" width="75">       | [Mirror Addon for Vanilla Raytraced](https://github.com/MazeWave/Vanilla-Raytraced-Addons-Mirror)      |         MazeWave         |
