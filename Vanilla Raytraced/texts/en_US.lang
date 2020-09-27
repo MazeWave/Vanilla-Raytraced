@@ -3,15 +3,15 @@ vanillaRaytraced.general=General
 vanillaRaytraced.addons=Addons
 
 vanillaRaytraced.pack=Vanilla §2Raytraced
-vanillaRaytraced.pack.introduction=Vanilla §aRaytraced§r add PBR resources to Minecraft.
+vanillaRaytraced.pack.introduction=Vanilla §aRaytraced§r adds PBR resources to Minecraft.
 vanillaRaytraced.pack.description=It provides §creflections§r, §broughness§r, §aemissive light§r to your world with the same original look of Minecraft, but in better.
 vanillaRaytraced.pack.compatibility=This resource pack only works on §aNVIDIA RTX§r cards.
 vanillaRaytraced.pack.warning=This version of the pack is still in early developpement. You can deal with §cbugs§r while playing the game.
 vanillaRaytraced.pack.QA=Questions and Answers :
 vanillaRaytraced.pack.Q1=Q: From who are the normals map textures ?
-vanillaRaytraced.pack.A1=A: Most of the normal maps textures are from a Java Edition pack called "Vanilla-Normals-Renewed-1.12" by Poudingue: https://short-d.com/r/3Mk0
+vanillaRaytraced.pack.A1=A: Most of the normal maps textures are from a Java Edition pack created by Poudingue called "Vanilla-Normals-Renewed-1.12": https://short-d.com/r/3Mk0
 vanillaRaytraced.pack.Q2=Q: Will the texture pack be updated to newer version ?
-vanillaRaytraced.pack.A2=A: Of course i will, by the way, if you want to support me. Donate on Paypal: https://paypal.me/mazewave
+vanillaRaytraced.pack.A2=A: Of course I will. By the way, if you want to support me you can donate on paypal: https://paypal.me/mazewave
 
 vanillaRaytraced.credits=Credits
 vanillaRaytraced.credits.pack=Ressource pack

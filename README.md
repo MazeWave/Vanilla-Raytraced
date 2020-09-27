@@ -16,7 +16,7 @@ This version of the pack is still in early developpement. You can deal with bugs
 |                                                                                    Icon                                                                            |                                                 Addon                                                  |          Author          |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------:|:------------------------:|
 | <img src="https://raw.githubusercontent.com/MazeWave/Vanilla-Raytraced-Addons-Mirror/master/Vanilla%20Raytraced%20Mirror%20Addons/pack_icon.png" width="75">       | [Mirror Addon for Vanilla Raytraced](https://github.com/MazeWave/Vanilla-Raytraced-Addons-Mirror)      |         MazeWave         |
-| <img src="https://raw.githubusercontent.com/MazeWave/Vanilla-Raytraced-Addons-Glass/master/Vanilla%20Raytraced%20Clear%20Glass%20Addons/pack_icon.png" width="75"> | [Clear Glass Addon for Vanilla Raytraced](https://github.com/MazeWave/Vanilla-Raytraced-Addons-Glass)  |         MazeWave         |
+| <img src="https://raw.githubusercontent.com/MazeWave/Vanilla-Raytraced-Addons-Glass/master/Vanilla%20Raytraced%20Clean%20Glass%20Addons/pack_icon.png" width="75"> | [Clean Glass Addon for Vanilla Raytraced](https://github.com/MazeWave/Vanilla-Raytraced-Addons-Glass)  |         MazeWave         |
 
 > *If you want to appear in this list, just do a pull request*
 
