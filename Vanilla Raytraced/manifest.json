@@ -9,7 +9,7 @@
     },
     "modules": [
         {
-            "version": [0, 3, 0],
+            "version": [0, 4, 0],
             "type": "resources",
             "uuid": "b9f5faaf-8ecc-460f-8eee-1fa1c30a04e8"
         }
