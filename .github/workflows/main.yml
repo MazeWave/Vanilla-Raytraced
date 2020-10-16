@@ -10,19 +10,18 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Gets latest created release info
-        id: latest_release_info
-        uses: jossef/action-latest-release-info@v1.1.0
+        uses: octokit/request-action@v2.x
+        id: get_latest_release
+        with:
+          route: GET /repos/:repository/releases/latest
+          repository: ${{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Fetch API Data 📦
-        uses: JamesIves/fetch-api-data-action@releases/v1
-        with:
-          ENDPOINT: https://api.github.com/repos/MazeWave/Vanilla-Raytraced/releases/${{ steps.latest_release_info.outputs.id }}
               
       - name: Zip
         run: |
-          zip -r "Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.mcpack" "Vanilla Raytraced"
-          zip "Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.zip" "Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.mcpack"
+          zip -r "Vanilla-Raytraced.${{ fromJson(steps.get_latest_release.outputs.data).tag_name }}.mcpack" "Vanilla Raytraced"
+          zip "Vanilla-Raytraced.${{ fromJson(steps.get_latest_release.outputs.data).tag_name }}.zip" "Vanilla-Raytraced.${{ fromJson(steps.get_latest_release.outputs.data).tag_name }}.mcpack"
       
       - name: Upload to Github
         id: upload-release-asset 
@@ -30,9 +29,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
-          asset_path: Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.mcpack
-          asset_name:  Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.mcpack
+          upload_url: ${{ fromJson(steps.get_latest_release.outputs.data).upload_url }}
+          asset_path: Vanilla-Raytraced.${{ fromJson(steps.get_latest_release.outputs.data).tag_name }}.mcpack
+          asset_name:  Vanilla-Raytraced.${{ fromJson(steps.get_latest_release.outputs.data).tag_name }}.mcpack
           asset_content_type: application/zip
       - name: Upload to CurseForge
         uses: itsmeow/curseforge-upload@master
@@ -40,8 +39,8 @@ jobs:
           token: ${{ secrets.CF_API_TOKEN }}
           project_id: 406651
           game_endpoint: minecraft
-          file_path: Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}.zip
-          changelog: ${{ steps.FETCH_API_DATA.outputs.body }}
-          display_name: Vanilla-Raytraced.${{ steps.latest_release_info.outputs.tag_name }}
+          file_path: Vanilla-Raytraced.${{ fromJson(steps.get_latest_release.outputs.data).tag_name }}.zip
+          changelog: ${{ fromJson(steps.get_latest_release.outputs.data).body }}
+          display_name: Vanilla-Raytraced.${{ fromJson(steps.get_latest_release.outputs.data).tag_name }}
           game_versions: addons:1.16,addons:1.15
           release_type: alpha
