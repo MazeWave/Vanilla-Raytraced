@@ -6,8 +6,7 @@ $host.ui.rawui.windowtitle="Generate"
 
 $files = Get-ChildItem $vanilla\textures -Include *.png,*.tga,*.jpg,*.jpeg -Recurse -File
 foreach ($file in $files) {
-	$withoutExt = $file.FullName.Replace($vanilla, $path).Replace($file.Extension, "")
-	$pathRelative = $path + $withoutExt
+	$pathRelative = $file.FullName.Replace((Get-Item $vanilla).FullName, $path).Replace($file.Extension, "")
 	
 	if ((Test-Path -Path $($pathRelative + "_mer.png")) -or (Test-Path -Path $($pathRelative + "_normal.png"))) {
 		if (Test-Path -Path $($pathRelative + ".png")) {
