@@ -2,19 +2,22 @@
 param (
 	[string]$pack = "./Vanilla Raytraced",
 	[string]$temp = "./.temp",
-	[string]$vanilla = $($temp + "/vanilla")
+	[string]$vanilla = $($temp + "/vanilla"),
+	[string]$tempPack = $($temp + "/pack"),
+	[string]$export = $($temp + "/export")
 )
 $host.ui.rawui.windowtitle="Generate"
-$packAbs = (Get-Item $($temp + "/pack")).FullName;
-$vanillaAbs = (Get-Item $vanilla).FullName;
 
 #---------------------#
 #     Temp folder     #
 #---------------------#
 Write-Host "`nCreating temp folder" -NoNewline
-if(Test-Path -Path $($temp + "/pack")) { Remove-Item -Path $($temp + "/pack") -Recurse -Force }
-Copy-Item -Path $pack -Destination $($temp + "/pack") -Recurse -Force
+if(Test-Path -Path $tempPack) { Remove-Item -Path $tempPack -Recurse -Force }
+Copy-Item -Path $pack -Destination $tempPack -Recurse -Force
 Write-Host " (Done)" -ForegroundColor Green
+
+$packAbs = (Get-Item $tempPack).FullName;
+$vanillaAbs = (Get-Item $vanilla).FullName;
 
 #---------------------#
 #  Duplicated  Files  #
@@ -47,7 +50,7 @@ Write-Host  "`nGenerating texture set files"
 foreach ($file in $files) {
 	$tempRelative = $file.FullName.Replace($vanillaAbs, "").Replace($file.Extension, "")
 	Write-Host "`t" $tempRelative -NoNewline;
-	$tempRelative = $temp + "/pack" + $tempRelative
+	$tempRelative = $tempPack + $tempRelative
 	
 	if ((Test-Path -Path $($tempRelative + "_mer.png")) -or (Test-Path -Path $($tempRelative + "_normal.png"))) {
 		$texture_set = "{`n`t""format_version"": ""1.16.100""`n`t""minecraft:texture_set"": {"
@@ -66,7 +69,7 @@ foreach ($file in $files) {
 #       .Mcpack       #
 #---------------------#
 Write-Host  "`nGenerating the .mcpack" -NoNewline
-New-Item -Path $($temp + "/export") -ItemType Directory -Force | Out-Null
+New-Item -Path $export -ItemType Directory -Force | Out-Null
 Compress-Archive -Path $($temp + "/pack/*") -DestinationPath $($temp + "/export/Vanilla Raytraced.zip") -Force
 Move-Item -Path $($temp + "/export/Vanilla Raytraced.zip") -Destination $($temp + "/export/Vanilla Raytraced.mcpack") -Force
 Write-Host " (Done)" -ForegroundColor Green
