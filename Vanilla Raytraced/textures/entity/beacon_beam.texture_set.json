@@ -1,7 +1,0 @@
-{
-  "format_version": "1.16.100",
-  "minecraft:texture_set": {
-    "color": "beacon_beam",
-    "metalness_emissive_roughness": "beacon_beam_mer"
-  }
-}
