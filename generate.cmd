@@ -1,3 +1,3 @@
 @echo off
-powershell -ExecutionPolicy Bypass ".\generate.ps1"
+pwsh ".\generate.ps1"
 pause
