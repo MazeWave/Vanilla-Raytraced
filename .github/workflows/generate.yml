@@ -1,0 +1,27 @@
+name: Generate
+
+on:
+  pull_request: {}
+  push: { branches: [master] }
+    
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the repo
+        uses: actions/checkout@v2
+      - name: Download the template
+        uses: wei/wget@v1
+        with:
+          args: -O Vanilla.zip https://aka.ms/resourcepacktemplate
+      - name: Unzip the template
+        run: unzip -qq Vanilla.zip -d Vanilla
+      - run: find | sed 's|[^/]*/|- |g'
+      - name: Generate
+        shell: pwsh
+        run: 'pwsh ".\generate.ps1" -vanilla "Vanilla"'
+      - name: Upload the generated pack
+        uses: actions/upload-artifact@v2
+        with:
+          name: Vanilla Raytraced
+          path: Vanilla Raytraced
