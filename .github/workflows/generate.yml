@@ -16,7 +16,6 @@ jobs:
           args: -O Vanilla.zip https://aka.ms/resourcepacktemplate
       - name: Unzip the template
         run: unzip -qq Vanilla.zip -d Vanilla
-      - run: find | sed 's|[^/]*/|- |g'
       - name: Generate
         shell: pwsh
         run: 'pwsh ".\generate.ps1" -vanilla "Vanilla"'
@@ -24,4 +23,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Vanilla Raytraced
-          path: Vanilla Raytraced
+          path: .temp/export
