@@ -24,7 +24,7 @@ $vanillaAbs = (Get-Item $vanilla).FullName;
 #---------------------#
 Write-Host  "`nFinding duplicate files"
 $duplicated = 0;
-foreach ($vanillaF in $(Get-ChildItem $vanilla -Recurse -File -Force)) {
+foreach ($vanillaF in $(Get-ChildItem $vanilla -Exclude *.png,*.tga,*.jpg,*.jpeg -Recurse -File -Force)) {
 	$packFpath = $vanillaF.FullName.Replace($vanillaAbs, $packAbs);
 	Write-Host "`t" $vanillaF.FullName.Replace($vanillaAbs, "") -NoNewline;
 	if(Test-Path -Path $packFpath){
@@ -53,15 +53,18 @@ foreach ($file in $files) {
 	$tempRelative = $tempPack + $tempRelative
 	
 	if ((Test-Path -Path $($tempRelative + "_mer.png")) -or (Test-Path -Path $($tempRelative + "_normal.png"))) {
-		$texture_set = "{`n`t""format_version"": ""1.16.100""`n`t""minecraft:texture_set"": {"
-		if (Test-Path -Path $($tempRelative + ".png")) { $texture_set += "`n`t`t""color"": """ + $file.Basename + """," }
-		if (Test-Path -Path $($tempRelative+ "_mer.png")) { $texture_set += "`n`t`t""metalness_emissive_roughness"": """ + $file.Basename + "_mer""" }
-		if ((Test-Path -Path $($tempRelative + "_mer.png")) -and (Test-Path -Path $($tempRelative + "_normal.png"))) { $texture_set += "," }
-		if (Test-Path -Path $($tempRelative+ "_normal.png")) { $texture_set += "`n`t`t""normal"": """ + $file.Basename + "_normal""" }
-		$texture_set += "`n`t}`n}"
-		Set-Content -Path $($tempRelative + ".texture_set.json") -Value $texture_set
-			
-		Write-Host " (Done)" -ForegroundColor Green
+		if (Test-Path -Path $($tempRelative + ".png")) {
+			$texture_set = "{`n`t""format_version"": ""1.16.100""`n`t""minecraft:texture_set"": {"
+			$texture_set += "`n`t`t""color"": """ + $file.Basename + ""","
+			if (Test-Path -Path $($tempRelative+ "_mer.png")) { $texture_set += "`n`t`t""metalness_emissive_roughness"": """ + $file.Basename + "_mer""" }
+			if ((Test-Path -Path $($tempRelative + "_mer.png")) -and (Test-Path -Path $($tempRelative + "_normal.png"))) { $texture_set += "," }
+			if (Test-Path -Path $($tempRelative+ "_normal.png")) { $texture_set += "`n`t`t""normal"": """ + $file.Basename + "_normal""" }
+			$texture_set += "`n`t}`n}"
+			Set-Content -Path $($tempRelative + ".texture_set.json") -Value $texture_set
+				
+			Write-Host " (Done)" -ForegroundColor Green
+		}
+		else { Write-Host " (Ignored): No color file" -ForegroundColor Red }
 	} else { Write-Host " (Ignored): No mer or normal file" -ForegroundColor Yellow }
 }
 
