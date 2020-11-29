@@ -54,7 +54,7 @@ foreach ($file in $files) {
 	
 	if ((Test-Path -Path $($tempRelative + "_mer.png")) -or (Test-Path -Path $($tempRelative + "_normal.png"))) {
 		if (Test-Path -Path $($tempRelative + ".png")) {
-			$texture_set = "{`n`t""format_version"": ""1.16.100""`n`t""minecraft:texture_set"": {"
+			$texture_set = "{`n`t""format_version"": ""1.16.100"",`n`t""minecraft:texture_set"": {"
 			$texture_set += "`n`t`t""color"": """ + $file.Basename + ""","
 			if (Test-Path -Path $($tempRelative+ "_mer.png")) { $texture_set += "`n`t`t""metalness_emissive_roughness"": """ + $file.Basename + "_mer""" }
 			if ((Test-Path -Path $($tempRelative + "_mer.png")) -and (Test-Path -Path $($tempRelative + "_normal.png"))) { $texture_set += "," }
