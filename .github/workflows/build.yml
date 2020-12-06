@@ -27,12 +27,17 @@ jobs:
       - name: Generate
         shell: pwsh
         run: 'pwsh ".\generate.ps1" -vanilla "Vanilla"'
+      - name: Upload to Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Vanilla Raytraced
+          path: .temp/export
         
       - name: Zip
         run: |
           mv ".temp/export/Vanilla Raytraced.mcpack" "Vanilla-Raytraced.${{ fromJson(steps.get_latest_release.outputs.data).tag_name }}.mcpack"
           zip "Vanilla-Raytraced.${{ fromJson(steps.get_latest_release.outputs.data).tag_name }}.zip" "Vanilla-Raytraced.${{ fromJson(steps.get_latest_release.outputs.data).tag_name }}.mcpack"
-        
+       
       - name: Upload to Github
         id: upload-release-asset 
         uses: actions/upload-release-asset@v1
@@ -54,4 +59,4 @@ jobs:
           changelog_type: "html"
           display_name: Vanilla-Raytraced.${{ fromJson(steps.get_latest_release.outputs.data).tag_name }}
           game_versions: addons:1.16,addons:1.15
-          release_type: alpha
+          release_type: beta
