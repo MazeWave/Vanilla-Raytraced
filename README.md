@@ -16,12 +16,15 @@ This version of the pack is still in early developpement. You can deal with bugs
 
 **Modules must imperatively be placed on top of Vanilla Raytraced**
 
-|                                                                                    Icon                                                                            |                                                 Addon                                                  |          Author          |
-|:------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------:|:------------------------:|
-| <img src="https://raw.githubusercontent.com/MazeWave/Vanilla-Raytraced-Addons-Mirror/master/Vanilla%20Raytraced%20Mirror%20Addons/pack_icon.png" width="75">       | [Mirror Addon for Vanilla Raytraced](https://github.com/MazeWave/Vanilla-Raytraced-Addons-Mirror)      |         MazeWave         |
-| <img src="https://raw.githubusercontent.com/MazeWave/Vanilla-Raytraced-Addons-Glass/master/Vanilla%20Raytraced%20Clean%20Glass%20Addons/pack_icon.png" width="75"> | [Clean Glass Addon for Vanilla Raytraced](https://github.com/MazeWave/Vanilla-Raytraced-Addons-Glass)  |         MazeWave         |
+|                                                                                         Icon                                                                                  |                                                      Addon                                                      |          Author          |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------:|:------------------------:|
+| <img src="https://raw.githubusercontent.com/MazeWave/Vanilla-Raytraced-Addons-Mirror/master/Vanilla%20Raytraced%20Mirror%20Addons/pack_icon.png" width="75">                  | [Mirror Addon for Vanilla Raytraced](https://github.com/MazeWave/Vanilla-Raytraced-Addons-Mirror)               |         MazeWave         |
+| <img src="https://raw.githubusercontent.com/MazeWave/Vanilla-Raytraced-Addons-Glass/master/Vanilla%20Raytraced%20Clean%20Glass%20Addons/pack_icon.png" width="75">            | [Clean Glass Addon for Vanilla Raytraced](https://github.com/MazeWave/Vanilla-Raytraced-Addons-Glass)           |         MazeWave         |
+| <img src="https://raw.githubusercontent.com/MazeWave/Vanilla-Raytraced-Addons-Bloody-Nether/main/Vanilla%20Raytraced%20-%20Bloody%20Nether%20Addon/pack_icon.png" width="75"> | [Bloody Nether Addon for Vanilla Raytraced](https://github.com/MazeWave/Vanilla-Raytraced-Addons-Bloody-Nether) |         MazeWave         |
+| <img src="https://raw.githubusercontent.com/MazeWave/Vanilla-Raytraced-Addons-Luminous-Ores/main/Vanilla%20Raytraced%20-%20Luminous%20Ores%20Addon/pack_icon.png" width="75"> | [Luminous Ores Addon for Vanilla Raytraced](https://github.com/MazeWave/Vanilla-Raytraced-Addons-Luminous-Ores) |         MazeWave         |
 
-> *If you want to appear in this list, just do a pull request*
+> *To create your own addon you can use [this template](https://github.com/06Games/VRP-Addon-Template).*  
+> *Once finished, if you wish to appear in this table, you are free to make a pull request.*
 
 ## Questions and Answers
 **Q: From who are the normals map textures ?**  
