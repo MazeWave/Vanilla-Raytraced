@@ -18,15 +18,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
      
-      - name: Download the template
-        uses: wei/wget@v1
-        with:
-          args: -O Vanilla.zip https://aka.ms/resourcepacktemplate
-      - name: Unzip the template
-        run: unzip -qq Vanilla.zip -d Vanilla
       - name: Generate
         shell: pwsh
-        run: 'pwsh ".\generate.ps1" -vanilla "Vanilla"'
+        run: 'pwsh .\make.ps1'
       - name: Upload to Artifact
         uses: actions/upload-artifact@v2
         with:
