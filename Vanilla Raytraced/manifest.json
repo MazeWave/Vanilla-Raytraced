@@ -3,13 +3,13 @@
     "header": {
         "name": "Vanilla Raytraced",
         "description": "Vanilla §aRaytraced §fadds PBR resources to Minecraft. It provides §creflections, §broughness, §aemissive light §fto your world with the same original look of Minecraft, but in better.",
-        "version": [0, 4, 2],
+        "version": [1, 0, 0],
         "uuid": "0188bf36-6255-4639-b9de-c9eaef34ef73",
 		"min_engine_version": [1, 15, 0]
     },
     "modules": [
         {
-            "version": [0, 4, 2],
+            "version": [1, 0, 0],
             "type": "resources",
             "uuid": "b9f5faaf-8ecc-460f-8eee-1fa1c30a04e8"
         }
