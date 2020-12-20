@@ -20,7 +20,7 @@ jobs:
      
       - name: Generate
         shell: pwsh
-        run: 'pwsh .\make.ps1'
+        run: 'pwsh .\make.ps1 -debug 1'
       - name: Upload to Artifact
         uses: actions/upload-artifact@v2
         with:
