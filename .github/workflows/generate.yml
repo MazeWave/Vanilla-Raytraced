@@ -2,7 +2,7 @@ name: Generate
 
 on:
   pull_request: {}
-  push: { branches: [master] }
+  push: {}
   release: { types: [published] }
     
 jobs:
