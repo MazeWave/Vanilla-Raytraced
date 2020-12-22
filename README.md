@@ -7,14 +7,14 @@
 </p>
 
 Vanilla Raytraced adds PBR resources to Minecraft.  
-It provides reflections, roughness, emissive light to your world with the same original look of Minecraft, but in better.  
+It provides reflections, roughness, emissive light to your world while maintaining the vanilla look of Minecraft.
 
 **This resource pack only works on NVIDIA RTX cards.**  
 This version of the pack is still in early developpement. You can deal with bugs while playing the game.
 
 ## Compatible addons
 
-**Modules must imperatively be placed on top of Vanilla Raytraced**
+**Addons must imperatively be placed on top of Vanilla Raytraced**
 
 |                                                                                         Icon                                                                                  |                                                      Addon                                                      |          Author          |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------:|:------------------------:|
@@ -27,8 +27,24 @@ This version of the pack is still in early developpement. You can deal with bugs
 > *If you wish to appear in this table, you are free to make a pull request.*
 
 ## Questions and Answers
-**Q: From who are the normals map textures ?**  
-A: Most of the normal maps textures are from a Java Edition pack created by [Poudingue](https://github.com/Poudingue) called ["Vanilla-Normals-Renewed-1.12"](https://github.com/Poudingue/Vanilla-Normals-Renewed-1.12)  
-  
+
 **Q: Will the texture pack be updated to newer version ?**  
-A: Of course I will. By the way, if you want to support me you can [donate on paypal](https://paypal.me/mazewave)  
+A: Yes, of course, this pack will be kept up to date as long as possible.  
+
+**Q: I installed the pack but nothing happens**  
+A: Please verify that you are using Minecraft version **1.16.200 or later** and that your graphics card meets the [technical specifications](https://help.minecraft.net/hc/en-us/articles/360052769812-Minecraft-with-Ray-Tracing-Technical-Requirements) required for RTX to work.     
+
+**Q: My question is not covered by this FAQ**  
+A: Open an issue, we will be happy to answer you as soon as possible
+
+## Donation
+All of our work is done on a voluntary basis and in our spare time.  
+We decided to make this pack open-source because we believe that mutual community support can bring a lot and that it's in the spirit of Minecraft to share freely.  
+However, if you wish to donate to us, you are free to do so at [this Paypal address](https://paypal.me/mazewave)  
+A big thank you to all our donors for their support 🙏
+
+## Credits
+**Ressource pack:** [MazeWave](https://github.com/MazeWave/)  
+**Normal maps:** [MazeWave](https://github.com/MazeWave/) and [Poudingue](https://github.com/Poudingue/) [(Vanilla-Normals-Renewed-1.12)](https://github.com/Poudingue/Vanilla-Normals-Renewed-1.12)  
+**User interface:** [Evan Galli](https://github.com/06Games/)  
+**Automation:** [Evan Galli](https://github.com/06Games/)  
