@@ -1,0 +1,16 @@
+// Documentation: https://help.minecraft.net/hc/en-us/articles/360051618391-Minecraft-Fog-in-Resource-Packs-Documentation
+
+{
+  "biomes": {
+    // Nether
+    "hell": {
+      "fog_color": "#a12b1b"
+    },
+    "crimson_forest": {
+      "fog_color": "#a80300"
+    },
+    "warped_forest": {
+      "fog_color": "#37bfa9"
+    }
+  }
+}
