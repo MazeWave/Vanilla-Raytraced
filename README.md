@@ -1,16 +1,16 @@
 <p align="center">
-  <img alt="Vanilla Raytraced" src="https://github.com/MazeWave/Vanilla-Raytraced/raw/master/Vanilla%20Raytraced/pack_icon.png" width="200">
+  <a href="https://mazewave.github.io/vanilla-raytraced"><img alt="Vanilla Raytraced" src="https://github.com/MazeWave/Vanilla-Raytraced/raw/master/Vanilla%20Raytraced/pack_icon.png" width="200"></a>
   <br />
   <a href="https://github.com/MazeWave/Vanilla-Raytraced/releases"><img src="https://img.shields.io/github/tag/MazeWave/Vanilla-Raytraced.svg?label=version&style=flat" alt="Version"></a>
   <a href="https://github.com/MazeWave/Vanilla-Raytraced/releases"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/MazeWave/Vanilla-Raytraced/total"></a>
   <a href="https://github.com/MazeWave/Vanilla-Raytraced/blob/master/LICENSE.md"><img alt="License" src="https://img.shields.io/badge/License-BY--NC--SA-blue"></a>
 </p>
 
-Vanilla Raytraced adds PBR resources to Minecraft.  
+**Vanilla Raytraced** adds PBR resources to Minecraft.  
 It provides reflections, roughness, emissive light to your world while maintaining the vanilla look of Minecraft.
 
-**This resource pack only works on NVIDIA RTX cards.**  
-This version of the pack is still in early developpement. You can deal with bugs while playing the game.
+> **This resource pack only works on NVIDIA RTX cards.**  
+> This version of the pack is still in early developpement. You can deal with bugs while playing the game.
 
 ## Compatible addons
 
