@@ -1,0 +1,31 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "vrp:default"
+    },
+    "volumetric": {
+      "density": {
+        "air": {
+          "max_density": 0.025,
+          "max_density_height": 56,
+          "zero_density_height": 100
+        }
+      },
+      "media_coefficients": {
+        "air": {
+          "scattering": [ 0.0575, 0.0575, 0.0575 ],
+          "absorption": [ 0.0575, 0.0575, 0.0575 ]
+        },
+        "cloud": {
+          "scattering": [ 0.08, 0.08, 0.08 ],
+          "absorption": [ 0.08, 0.08, 0.08 ]
+        },
+        "water": {
+          "scattering": [ 0.001, 0.0055, 0.0095 ],
+          "absorption": [ 0.13, 0.100, 0.085 ]
+        }
+      }
+    }
+  }
+}

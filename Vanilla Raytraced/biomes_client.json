@@ -2,6 +2,10 @@
 
 {
   "biomes": {
+    "default" : {
+      "fog_identifier": "vrp:default"
+	},
+	
     // Nether
     "hell": {
       "fog_color": "#a12b1b"
