@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://mazewave.github.io/vanilla-raytraced"><img alt="Vanilla Raytraced" src="https://github.com/MazeWave/Vanilla-Raytraced/raw/master/Vanilla%20Raytraced/pack_icon.png" width="200"></a>
+  <a href="https://mazewave.github.io/vanilla-raytraced"><img alt="Vanilla Raytraced" src="Vanilla%20Raytraced/pack_icon.png" width="200"></a>
   <br />
   <a href="https://github.com/MazeWave/Vanilla-Raytraced/releases"><img src="https://img.shields.io/github/tag/MazeWave/Vanilla-Raytraced.svg?label=version&style=flat" alt="Version"></a>
   <a href="https://github.com/MazeWave/Vanilla-Raytraced/releases"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/MazeWave/Vanilla-Raytraced/total"></a>
@@ -7,10 +7,10 @@
 </p>
 
 **Vanilla Raytraced** adds PBR resources to Minecraft.  
-It provides reflections, roughness, emissive light to your world while maintaining the vanilla look of Minecraft.
+It provides reflections, roughness and emissive light to your world while maintaining the vanilla look of Minecraft.
 
-> **This resource pack only works on NVIDIA RTX cards.**  
-> This version of the pack is still in early developpement. You can deal with bugs while playing the game.
+> **This resource pack only works on cards compatible with RTX.**  
+> If you encounter bugs while using this pack, please open an issue
 
 ## Compatible addons
 
@@ -46,5 +46,6 @@ A big thank you to all our donors for their support 🙏
 ## Credits
 **Ressource pack:** [MazeWave](https://github.com/MazeWave/)  
 **Normal maps:** [MazeWave](https://github.com/MazeWave/) and [Poudingue](https://github.com/Poudingue/) [(Vanilla-Normals-Renewed-1.12)](https://github.com/Poudingue/Vanilla-Normals-Renewed-1.12)  
+**Fogs:** [Evan Galli](https://github.com/06Games/) and [MazeWave](https://github.com/MazeWave/)  
 **User interface:** [Evan Galli](https://github.com/06Games/)  
 **Automation:** [Evan Galli](https://github.com/06Games/)  

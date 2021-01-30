@@ -105,7 +105,7 @@
 						},
 						{
 							"rp_by@vrp.menu_text": {
-								"text": "/§dMaze§5Wave\n\n"
+								"text": "§dMaze§5Wave\n\n"
 							}
 						},
 						{
@@ -116,7 +116,18 @@
 						},
 						{
 							"menu_by@vrp.menu_text": {
-								"text": "/§9EvanG\n\n"
+								"text": "§9EvanG\n\n"
+							}
+						},
+						{
+							"fog@vrp.menu_text": {
+								"font_scale_factor": 1.2,
+								"text": "vanillaRaytraced.credits.fog"
+							}
+						},
+						{
+							"fog_by@vrp.menu_text": {
+								"text": "§9EvanG§r & §dMaze§5Wave§r\n\n"
 							}
 						},
 						{
@@ -127,7 +138,18 @@
 						},
 						{
 							"normals_by@vrp.menu_text": {
-								"text": "/§2Poudingue§r (https://github.com/Poudingue)"
+								"text": "§dMaze§5Wave§r & §2Poudingue§r (https://github.com/Poudingue)\n\n"
+							}
+						},
+						{
+							"scripts@vrp.menu_text": {
+								"font_scale_factor": 1.2,
+								"text": "vanillaRaytraced.credits.scripts"
+							}
+						},
+						{
+							"scripts_by@vrp.menu_text": {
+								"text": "§9EvanG"
 							}
 						}
 					]
@@ -161,8 +183,8 @@
                 }
             },
             {
-                "warning@vrp.menu_text": {
-                    "text": "vanillaRaytraced.pack.warning"
+                "issue@vrp.menu_text": {
+                    "text": "vanillaRaytraced.pack.issue"
                 }
             },
             {
@@ -205,6 +227,25 @@
             {
                 "A2@vrp.qa_answer": {
                     "text": "vanillaRaytraced.pack.A2"
+                }
+            },
+            {
+                "gap_4": {
+                    "type": "label"
+                }
+            },
+            {
+                "Q3@vrp.menu_text": {
+                    "type": "label",
+                    "max_size": [
+                        "100%"
+                    ],
+                    "text": "vanillaRaytraced.pack.Q3"
+                }
+            },
+            {
+                "A3@vrp.qa_answer": {
+                    "text": "vanillaRaytraced.pack.A3"
                 }
             }
         ]

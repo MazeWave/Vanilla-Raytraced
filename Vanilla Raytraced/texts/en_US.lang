@@ -4,18 +4,22 @@ vanillaRaytraced.addons=Addons
 
 vanillaRaytraced.pack=Vanilla §2Raytraced
 vanillaRaytraced.pack.introduction=Vanilla §aRaytraced§r adds PBR resources to Minecraft.
-vanillaRaytraced.pack.description=It provides §creflections§r, §broughness§r, §aemissive light§r to your world with the same original look of Minecraft, but in better.
-vanillaRaytraced.pack.compatibility=This resource pack only works on §aNVIDIA RTX§r cards.
-vanillaRaytraced.pack.warning=This version of the pack is still in early developpement. You can deal with §cbugs§r while playing the game.
+vanillaRaytraced.pack.description=It provides §creflections§r, §broughness§r and §aemissive light§r to your world with the same original look of Minecraft, but in better.
+vanillaRaytraced.pack.compatibility=This resource pack only works on cards compatible with §aRTX§r.
+vanillaRaytraced.pack.issue=If you encounter §cbugs§r while using this pack, please open an issue on Github
 vanillaRaytraced.pack.QA=Questions and Answers :
-vanillaRaytraced.pack.Q1=Q: From who are the normals map textures ?
-vanillaRaytraced.pack.A1=A: Most of the normal maps textures are from a Java Edition pack created by Poudingue called "Vanilla-Normals-Renewed-1.12": https://short-d.com/r/3Mk0
-vanillaRaytraced.pack.Q2=Q: Will the texture pack be updated to newer version ?
-vanillaRaytraced.pack.A2=A: Of course I will. By the way, if you want to support me you can donate on paypal: https://paypal.me/mazewave
+vanillaRaytraced.pack.Q1=Q: Will the texture pack be updated to newer version ?
+vanillaRaytraced.pack.A1=A: Yes, of course, this pack will be kept up to date as long as possible. If you want to support us, you can donate on PayPal: https://paypal.me/mazewave
+vanillaRaytraced.pack.Q2=Q: I installed the pack but nothing happens
+vanillaRaytraced.pack.A2=A: Please verify that you are using Minecraft version §21.16.200 or later§r and that your graphics card meets the technical specifications for the RTX
+vanillaRaytraced.pack.Q3=Q: My question is not covered by this FAQ
+vanillaRaytraced.pack.A3=A: Open an issue on Github (https://github.com/MazeWave/Vanilla-Raytraced), we will be happy to answer you as soon as possible
 
 vanillaRaytraced.credits=Credits
 vanillaRaytraced.credits.pack=Ressource pack
 vanillaRaytraced.credits.ui=User interface
+vanillaRaytraced.credits.fog=Fog and light scattering 
 vanillaRaytraced.credits.normals=Normal maps
+vanillaRaytraced.credits.scripts=Automation
 
 vanillaRaytraced.licence=Licence

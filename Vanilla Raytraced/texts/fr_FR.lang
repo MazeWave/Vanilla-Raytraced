@@ -4,18 +4,22 @@ vanillaRaytraced.addons=Addons
 
 vanillaRaytraced.pack=Vanilla §2Raytraced
 vanillaRaytraced.pack.introduction=Vanilla §aRaytraced§r ajoute des ressources PBR à Minecraft.
-vanillaRaytraced.pack.description=Il fournit des §creflets§r, de la §brugosité§r, de la §alumière émissive§r à votre monde tout en conservant l'aspect originel de Minecraft.
-vanillaRaytraced.pack.compatibility=Ce pack de ressources ne fonctionne que sur les cartes §aRTX d'NVIDIA§r.
-vanillaRaytraced.pack.warning=Cette version du pack est encore en développement. Vous pouvez rencontrer des §cbugs§r lors de son utilisation.
+vanillaRaytraced.pack.description=Ce pack fournit des §creflets§r, de la §brugosité§r et de la §alumière émissive§r à votre monde tout en conservant l'aspect originel de Minecraft.
+vanillaRaytraced.pack.compatibility=Ce pack de ressources ne fonctionne que sur les cartes compatibles avec le §aRTX§r.
+vanillaRaytraced.pack.issue=Si vous rencontrez des §cbogues§r lors de l'utilisation de ce pack, veuillez ouvrir un ticket sur Github
 vanillaRaytraced.pack.QA=Questions et réponses :
-vanillaRaytraced.pack.Q1=Q: De qui sont les normal maps ?
-vanillaRaytraced.pack.A1=R: La plupart des normal maps proviennent d'un pack Java Edition créé par Poudingue appelé "Vanilla-Normals-Renewed-1.12": https://short-d.com/r/3Mk0
-vanillaRaytraced.pack.Q2=Q: Le pack de textures sera-t-il mis à jour au fil des versions de Minecraft ?
-vanillaRaytraced.pack.A2=R: Bien sûr, je le ferai. Au fait, si vous voulez me soutenir faites un don sur Paypal: https://paypal.me/mazewave
+vanillaRaytraced.pack.Q1=Q: Le pack de textures sera-t-il mis à jour au fil des versions de Minecraft ?
+vanillaRaytraced.pack.A1=R: Oui, bien sûr, ce pack sera mis à jour le plus longtemps possible. Si vous souhaitez nous soutenir, vous pouvez faire un don sur PayPal: https://paypal.me/mazewave
+vanillaRaytraced.pack.Q2=Q: J'ai installé le pack mais rien ne se passe 
+vanillaRaytraced.pack.A2=R: Veuillez vérifier que vous utilisez la version §21.16.200 ou ultérieure§r de Minecraft et que votre carte graphique répond aux spécifications techniques du RTX
+vanillaRaytraced.pack.Q3=Q: Ma question n'est pas couverte par cette FAQ
+vanillaRaytraced.pack.A3=R: Ouvrez une issue sur Github (https://github.com/MazeWave/Vanilla-Raytraced), nous nous ferons un plaisir de vous répondre dans les plus brefs délais 
 
 vanillaRaytraced.credits=Crédits
 vanillaRaytraced.credits.pack=Pack de ressources
 vanillaRaytraced.credits.ui=Interface utilisateur
+vanillaRaytraced.credits.fog=Brouillard et diffusion de la lumière
 vanillaRaytraced.credits.normals=Normal maps
+vanillaRaytraced.credits.scripts=Automatisation
 
 vanillaRaytraced.licence=Licence
