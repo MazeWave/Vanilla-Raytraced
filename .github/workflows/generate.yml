@@ -67,4 +67,4 @@ jobs:
           changelog_type: "html"
           display_name: Vanilla-Raytraced.${{ fromJson(steps.get_latest_release.outputs.data).tag_name }}
           game_versions: addons:1.16,addons:1.15
-          release_type: beta
+          release_type: release
