@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://mazewave.github.io/vanilla-raytraced"><img alt="Vanilla Raytraced" src="Vanilla%20Raytraced/pack_icon.png" width="200"></a>
+  <a href="https://mazewave.github.io/vanilla-raytraced"><img alt="Vanilla Raytraced" src=".github/images/icon_alpha.png" width="200"></a>
   <br />
   <a href="https://github.com/MazeWave/Vanilla-Raytraced/releases"><img src="https://img.shields.io/github/tag/MazeWave/Vanilla-Raytraced.svg?label=version&style=flat" alt="Version"></a>
   <a href="https://github.com/MazeWave/Vanilla-Raytraced/releases"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/MazeWave/Vanilla-Raytraced/total"></a>
