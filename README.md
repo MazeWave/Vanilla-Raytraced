@@ -37,11 +37,15 @@ A: Please verify that you are using Minecraft version **1.16.200 or later** and 
 **Q: My question is not covered by this FAQ**  
 A: Open an issue, we will be happy to answer you as soon as possible
 
+## Development
+To build the pack, just run the `make.ps1` file and once the process is complete you will find the `.mcpack` inside `.temp/export/`  
+If you want to contribute to the pack, you are free to make a pull request
+
 ## Donation
 All of our work is done on a voluntary basis and in our spare time.  
 We decided to make this pack open-source because we believe that mutual community support can bring a lot and that it's in the spirit of Minecraft to share freely.  
 However, if you wish to donate to us, you are free to do so at [this Paypal address](https://paypal.me/mazewave)  
-A big thank you to all our donors for their support 🙏
+A big thank you to all our donors for their support 🙏 
 
 ## Credits
 **Ressource pack:** [MazeWave](https://github.com/MazeWave/)  
